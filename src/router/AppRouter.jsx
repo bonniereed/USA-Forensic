@@ -7,7 +7,7 @@ import Resources from "../pages/Resources";
 
 export default function AppRouter() {
   return (
-    <Routes>
+    <Routes basename='/USA-Forensic'>
       <Route path="/"          element={<Home />} />
       <Route path="/about"     element={<About />} />
       <Route path="/portfolio" element={<Portfolio />} />
