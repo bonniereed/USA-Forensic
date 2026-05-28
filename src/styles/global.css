@@ -680,6 +680,19 @@ main {
 .doc-list__link:hover { border-bottom-color: var(--color-accent); }
 
 
+/* Desktop tabbed view — visible above 640px */
+.portfolio-tabbed  { display: block; }
+.portfolio-stacked { display: none; }
+
+/* Mobile stacked view — both profiles shown, tabs hidden */
+@media (max-width: 640px) {
+  .portfolio-tabbed  { display: none; }
+  .portfolio-stacked { display: block; }
+  .portfolio-stacked__profile + .portfolio-stacked__profile {
+    border-top: 1px solid var(--color-border);
+  }
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: 300px 1fr;
