@@ -7,5 +7,5 @@ export const TAGLINE        = "Verified Data is Data — it doesn't take a side.
 export const ATTORNEYS_NOTE = "Attorneys, Law Firms & Agencies only, please.";
 export const CDN        = "https://www.usaforensic.com/_files/ugd/";
 export const COMPANY_NAME   = "USAForensic LLC";
-export const BRYAN_CV       = "/docs/Bryan Neumeister USAForensic October 2025.pdf";
-export const MATT_CV        = "/docs/Matthew Erickson CV.pdf";
+export const BRYAN_CV       = `${import.meta.env.BASE_URL}docs/Bryan Neumeister USAForensic October 2025.pdf`;
+export const MATT_CV        = `${import.meta.env.BASE_URL}docs/Matthew Erickson CV.pdf`;

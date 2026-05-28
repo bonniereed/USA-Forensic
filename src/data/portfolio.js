@@ -1,7 +1,7 @@
 import { BRYAN_CV, MATT_CV } from "../constants/company";
 
-const bryanimg = "/assets/Bryan.png";
-const mattimg  = "/assets/Matt.png";
+const bryanimg = `${import.meta.env.BASE_URL}assets/Bryan.png`;
+const mattimg  = `${import.meta.env.BASE_URL}assets/Matt.png`;
 
 const portfolioData = {
   bryan: {

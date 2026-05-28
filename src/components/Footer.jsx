@@ -5,7 +5,7 @@ import {
   COMPANY_NAME, TAGLINE,
 } from "../constants/company";
 import { NAV_LINKS } from "../constants/navigation";
-const LOGO  = "/assets/USA FORENSIC.png";
+const LOGO  = `${import.meta.env.BASE_URL}assets/USA FORENSIC.png`;
 
 export default function Footer() {
   const year = new Date().getFullYear();

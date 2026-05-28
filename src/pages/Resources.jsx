@@ -3,7 +3,7 @@ import { BsPhoneVibrate, BsPen, BsEnvelopeAt } from "react-icons/bs";
 import PageBanner from "../components/PageBanner";
 import { useReveal } from "../hooks/useReveal";
 import sections from "../data/resources";
-const labImg = "/assets/lab.png";
+const labImg = `${import.meta.env.BASE_URL}assets/lab.png`;
 
 import {
   PHONE_HREF, PHONE_DISPLAY,
