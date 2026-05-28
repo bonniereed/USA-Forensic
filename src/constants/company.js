@@ -1,0 +1,11 @@
+export const PHONE_DISPLAY  = "(833) 872-3672";
+export const PHONE_HREF     = "tel:8338723672";
+export const EMAIL_DISPLAY  = "Lab@USAForensic.com";
+export const EMAIL_HREF     = "mailto:Lab@USAForensic.com";
+export const INTAKE_URL     = "https://wkf.ms/4kKGXYe";
+export const TAGLINE        = "Verified Data is Data — it doesn't take a side.";
+export const ATTORNEYS_NOTE = "Attorneys, Law Firms & Agencies only, please.";
+export const CDN        = "https://www.usaforensic.com/_files/ugd/";
+export const COMPANY_NAME   = "USAForensic LLC";
+export const BRYAN_CV       = "/docs/Bryan Neumeister USAForensic October 2025.pdf";
+export const MATT_CV        = "/docs/Matthew Erickson CV.pdf";
