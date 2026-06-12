@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { BsCheck2 } from "react-icons/bs";
-import PageBanner from "../components/PageBanner";
-import CtaStrip  from "../components/CtaStrip";
-import { useReveal } from "../hooks/useReveal";
+import PageBanner    from "../components/PageBanner";
+import CtaStrip      from "../components/CtaStrip";
+import RevealSection from "../components/RevealSection";
 import portfolioData from "../data/portfolio";
 import { INTAKE_URL, ATTORNEYS_NOTE } from "../constants/company";
 
@@ -52,8 +52,6 @@ function ProfileCard({ person }) {
 
 export default function Portfolio() {
   const [active, setActive] = useState("bryan");
-  const contentRef = useReveal();
-
   return (
     <>
       <PageBanner
@@ -77,9 +75,9 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <div ref={contentRef} className="reveal">
+        <RevealSection>
           <ProfileCard person={portfolioData[active]} />
-        </div>
+        </RevealSection>
       </div>
 
       {/* Mobile: both profiles stacked */}

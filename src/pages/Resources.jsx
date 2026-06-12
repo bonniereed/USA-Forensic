@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { BsPhoneVibrate, BsPen, BsEnvelopeAt } from "react-icons/bs";
-import PageBanner from "../components/PageBanner";
-import { useReveal } from "../hooks/useReveal";
+import PageBanner    from "../components/PageBanner";
+import RevealSection from "../components/RevealSection";
 import sections from "../data/resources";
-const labImg = `${import.meta.env.BASE_URL}assets/lab.png`;
+import { LAB_IMG } from "../constants/assets";
 
 import {
   PHONE_HREF, PHONE_DISPLAY,
@@ -13,7 +13,6 @@ import {
 
 export default function Resources() {
   const [open, setOpen] = useState(null);
-  const contentRef = useReveal();
 
   const toggle = (i) => setOpen(open === i ? null : i);
 
@@ -24,10 +23,10 @@ export default function Resources() {
         subtitle="Forms, protocols, CVs & subpoena templates for legal professionals"
       />
 
-      <div ref={contentRef} className="resources-layout reveal">
+      <RevealSection className="resources-layout">
         {/* Sticky left column */}
         <aside className="resources-layout__aside">
-          <img src={labImg} alt="USAForensic Lab" className="resources-layout__lab-img" />
+          <img src={LAB_IMG} alt="USAForensic Lab" className="resources-layout__lab-img" />
 
           <blockquote className="resources-layout__quote">
             &ldquo;When other Forensic Labs can't do it, please give us a call!&rdquo;
@@ -84,7 +83,7 @@ export default function Resources() {
             ))}
           </div>
         </div>
-      </div>
+      </RevealSection>
     </>
   );
 }

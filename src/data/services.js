@@ -1,8 +1,9 @@
 
-import { BsCameraVideo, BsPhone, BsLaptop, BsMicFill, BsBroadcastPin, BsBuilding } from "react-icons/bs";
+import { BsCameraVideo, BsPhone, BsLaptop, BsMicFill, BsBroadcastPin } from "react-icons/bs";
 
 const services = [
   {
+    id: "forensic-video",
     icon: BsCameraVideo,
     title: "Forensic Video & Photo",
     shortDesc: "Clarification, authentication, DVR extraction & codec analysis",
@@ -12,6 +13,7 @@ const services = [
     ],
   },
   {
+    id: "cell-phone",
     icon: BsPhone,
     title: "Cell Phone Forensics",
     shortDesc: "Triple-pass extractions — deleted data, app data, location & more",
@@ -22,6 +24,7 @@ const services = [
     ],
   },
   {
+    id: "computer",
     icon: BsLaptop,
     title: "Computer Forensics",
     shortDesc: "Code-level analysis — far beyond push-button forensic programs",
@@ -32,6 +35,7 @@ const services = [
     ],
   },
   {
+    id: "forensic-audio",
     icon: BsMicFill,
     title: "Forensic Audio",
     shortDesc: "Voice analysis, clarification & Daubert-established methodology",
@@ -43,6 +47,7 @@ const services = [
     ],
   },
   {
+    id: "cell-tower",
     icon: BsBroadcastPin,
     title: "Cell Tower & CDR Analysis",
     shortDesc: "Call Detail Records — device location mapping & expert challenge",
@@ -52,17 +57,7 @@ const services = [
       "USAForensic has successfully challenged prosecution CDR analyses in numerous cases, identifying errors in tower mapping, sector assignments, and range assumptions that materially changed the evidentiary picture.",
       "CDR analysis is available for all major carriers including AT&T, Verizon, T-Mobile, Sprint, and US Cellular. Subpoena forms for each carrier are available in the Resources section.",
     ],
-  },
-  {
-    icon: BsBuilding,
-    title: "Lab & Facility",
-    shortDesc: "Two state-of-the-art forensic labs — Phoenix & Detroit",
-    description: [
-      "USAForensic operates two full-service forensic laboratories — one in Phoenix, Arizona and one in Detroit, Michigan — giving clients coast-to-coast access to in-person consultations, evidence drop-off, and on-site examination.",
-      "Both facilities are equipped with professional-grade hardware and software for video, audio, computer, and mobile device forensics. Chain-of-custody intake procedures are standard at both locations.",
-      "When other forensic labs can't do it, call us. USAForensic regularly accepts cases that other labs have declined or failed to complete — including encrypted devices, damaged media, and proprietary DVR formats.",
-    ],
-  },
+  }
 ];
 
 export default services;

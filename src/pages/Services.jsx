@@ -1,13 +1,12 @@
 import { useState } from "react";
-import PageBanner from "../components/PageBanner";
-import CtaStrip  from "../components/CtaStrip";
-import { useReveal } from "../hooks/useReveal";
-import services from "../data/services";
+import PageBanner    from "../components/PageBanner";
+import CtaStrip      from "../components/CtaStrip";
+import RevealSection from "../components/RevealSection";
+import services      from "../data/services";
 import { INTAKE_URL, PHONE_HREF, PHONE_DISPLAY, ATTORNEYS_NOTE } from "../constants/company";
 
 export default function Services() {
   const [activeTab, setActiveTab] = useState(0);
-  const contentRef = useReveal();
 
   return (
     <>
@@ -49,7 +48,7 @@ export default function Services() {
       </div>
 
       {/* Active service detail */}
-      <div ref={contentRef} className="service-detail reveal">
+      <RevealSection className="service-detail">
         {services.map((svc, i) => {
           const Icon = svc.icon;
           if (i !== activeTab) return null;
@@ -77,7 +76,7 @@ export default function Services() {
             </div>
           );
         })}
-      </div>
+      </RevealSection>
 
       <CtaStrip
         heading="Ready to start a case?"

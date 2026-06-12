@@ -10,6 +10,9 @@ const courts = [
 ];
 
 export default function Landing() {
+
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -26,7 +29,9 @@ export default function Landing() {
       <p className="page-banner__eyebrow">
         Cell Phone · Tower · Audio · Photo · Video · Computer Forensics
       </p>
-
+      <h2>Where Evidence Becomes Truth</h2>
+      <h1 className='landing-cert-label'>USA FORENSIC</h1>
+      <hr/>
       {/* Animated court type */}
       <span className="landing-cert-label">Certified In:&nbsp;</span>
       <div className="landing-court-row">

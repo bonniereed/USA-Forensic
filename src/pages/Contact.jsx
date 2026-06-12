@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { BsTelephone, BsEnvelopeAt, BsClock, BsGeoAlt, BsFolder2Open } from "react-icons/bs";
-import PageBanner from "../components/PageBanner";
-import { useReveal } from "../hooks/useReveal";
+import PageBanner    from "../components/PageBanner";
+import RevealSection from "../components/RevealSection";
 import {
   PHONE_HREF, PHONE_DISPLAY,
   EMAIL_HREF, EMAIL_DISPLAY,
@@ -16,9 +16,8 @@ const INFO = [
   { icon: BsFolder2Open, label: "Documents & Forms", content: "View Resources →",  href: "/resources" },
 ];
 
-export default function About() {
-  const contentRef = useReveal();
-  const formRef    = useRef(null);
+export default function Contact() {
+  const formRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,7 +38,7 @@ export default function About() {
         subtitle="Available 7 days a week — Phoenix, AZ & Detroit, MI"
       />
 
-      <div ref={contentRef} className="contact-wrap reveal">
+      <RevealSection className="contact-wrap">
         <div className="contact-card">
 
           {/* ── Left: info ── */}
@@ -100,7 +99,7 @@ export default function About() {
           </div>
 
         </div>
-      </div>
+      </RevealSection>
     </>
   );
 }

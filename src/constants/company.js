@@ -9,3 +9,11 @@ export const CDN        = "https://www.usaforensic.com/_files/ugd/";
 export const COMPANY_NAME   = "USAForensic LLC";
 export const BRYAN_CV       = `${import.meta.env.BASE_URL}docs/Bryan Neumeister USAForensic October 2025.pdf`;
 export const MATT_CV        = `${import.meta.env.BASE_URL}docs/Matthew Erickson CV.pdf`;
+
+export const COURTS = [
+  "US District Courts",
+  "Federal Courts",
+  "State Courts",
+  "Civil Courts",
+  "Military & Aviation Courts",
+];

@@ -1,7 +1,5 @@
 import { BRYAN_CV, MATT_CV } from "../constants/company";
-
-const bryanimg = `${import.meta.env.BASE_URL}assets/Bryan.png`;
-const mattimg  = `${import.meta.env.BASE_URL}assets/Matt.png`;
+import { BRYAN_IMG, MATT_IMG } from "../constants/assets";
 
 const portfolioData = {
   bryan: {
@@ -22,7 +20,7 @@ const portfolioData = {
       "In forensic audio, Bryan has analyzed more than 20,000 voice tracks, performing voice identification, audio clarification, and authenticity analysis using Daubert-established methodology accepted in federal and state courts.",
       "Bryan is a published author and lecturer for the American Bar Association and the Audio Engineering Society, and has testified as an expert witness in proceedings across 23 countries.",
     ],
-    images: [bryanimg],
+    images: [BRYAN_IMG],
     url: "https://www.neatvideo.com/user-stories/bryan-neumeister",
     cv: BRYAN_CV,
   },
@@ -41,7 +39,7 @@ const portfolioData = {
       "Matt Erickson brings 15+ years of hands-on programming and IT experience to every engagement. He is fluent in PowerShell, C++, SQL, Java, PERL, VBA, and more — giving him the ability to reverse-engineer custom software, analyze malware artifacts, and reconstruct timelines from fragmented data.",
       "He is fluid across all forms of IT infrastructure — from large corporate arrays and enterprise environments down to embedded systems and consumer devices. EnCase v8 and FTK certified.",
     ],
-    images: [mattimg],
+    images: [MATT_IMG],
     url: null,
     cv: MATT_CV,
   },

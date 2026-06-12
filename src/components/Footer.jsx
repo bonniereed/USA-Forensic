@@ -5,7 +5,7 @@ import {
   COMPANY_NAME, TAGLINE,
 } from "../constants/company";
 import { NAV_LINKS } from "../constants/navigation";
-const LOGO  = `${import.meta.env.BASE_URL}assets/usa-forensic.png`;
+import { LOGO_IMG } from "../constants/assets";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__brand">
-          <img src={LOGO} alt="USAForensic" className="footer__logo" />
+          <img src={LOGO_IMG} alt="USAForensic" className="footer__logo" />
           <p className="footer__tagline">{TAGLINE}</p>
         </div>
 
